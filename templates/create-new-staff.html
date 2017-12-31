@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Create a New Staff Account</title>
+  </head>
+  <body>
+    <h1>Create a New Staff Account</h1>
+    <br>
+    <br>
+    {%block content%}
+    <form action="" method="post">
+      <label for="user">What is the staff's new username?</label>
+      <div class="input"><input type="text" name="user" /></div>
+      <label for="pass">What is the staff's new password?</label>
+      <div class="input"><input type="text" name="pass" /></div>
+      <div class="input"><input type="submit" value="Create Account" /></div>
+    </form>
+    <br>
+    <br>
+    {% endblock %}
+    {% block logout %}
+      <a href="{{ url_for('unlogger') }}">Click here to logout!</a>
+    {% endblock %}
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Create a New Account</title>
+  </head>
+  <body>
+    <h1>Create a New Account</h1>
+    <br>
+    <br>
+    {%block content%}
+    <form action="" method="post">
+      <label for="user">What is your new username?</label>
+      <div class="input"><input type="text" name="user" /></div>
+      <label for="pass">What is your new password?</label>
+      <div class="input"><input type="text" name="pass" /></div>
+      <div class="input"><input type="submit" value="Create Account" /></div>
+    </form>
+    <br>
+    <br>
+    {% endblock %}
+  </body>
+</html>

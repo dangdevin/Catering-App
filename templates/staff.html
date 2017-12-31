@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Staff's Page</title>
+  </head>
+  <body>
+    {%block content%}
+    <h1>Welcome, {{name}}!</h1>
+    <br>
+    <br>
+    <h2>Events</h2>
+    <body>Coming soon...</body>
+    {% endblock %}
+    {% block logout %}
+      <a href="{{ url_for('unlogger') }}">Click here to logout!</a>
+    {% endblock %}
+  </body>
+</html>

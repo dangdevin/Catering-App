@@ -1,0 +1,13 @@
+<h1>Login</h1>
+{% block body %}
+  {% if error %}<div class="error"><strong>Error:</strong> {{ error }}</div>{% endif %}
+  <form action="" method="post">
+    <label for="user">Username</label>
+    <div class="input"><p><input type="text" name="user" /></p></div>
+    <label for="pass">Password</label>
+    <div class="input"><input type="text" name="pass" /></div>
+    <div class="actions"><input type="submit" value="Login"></div>
+  </form>
+  <a href="{{url_for('create_new_account')}}">New Customer? Click here!</a>
+{% endblock %}
+

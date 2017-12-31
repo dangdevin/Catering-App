@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>Owner's Profile</title>
+  </head>
+  <body>
+    <h1>Welcome back, Owner!</h1>
+    <br>
+    <br>
+    <a href= "{{url_for('create_new_staff')}}">Create New Staff Account</a>
+    <br>
+    <br>
+    {% block logout %}
+      <a href="{{ url_for('unlogger') }}">Click here to logout!</a>
+    {% endblock %}
+  </body>
+</html>

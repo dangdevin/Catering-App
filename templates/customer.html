@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Your Page</title>
+  </head>
+  <body>
+    {%block content%}
+    <h1>Welcome, {{name}}!</h1>
+    <br>
+    <br>
+    <h2>Book an Event!</h2>
+    <a href= "{{url_for('book_an_event', username=name, date=date)}}">Book an Event!</button></a>
+    {% endblock %}
+    {% block logout %}
+      <a href="{{ url_for('unlogger') }}">Click here to logout!</a>
+    {% endblock %}
+  </body>
+</html>
